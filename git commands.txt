@@ -1,0 +1,10 @@
+git status
+git init
+git status
+git add .
+git status
+git commit -m "Initial Commit"(message)
+git remote add origin (url)
+git push -u origin master
+
+Lorem

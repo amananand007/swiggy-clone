@@ -1317,7 +1317,7 @@ export const restaurantList = [
       area: "Sri Krishnapuri",
       totalRatingsString: "100+ ratings",
       cloudinaryImageId: "do39li0xmgt60copdm71",
-      cuisines: ["Burgers", "Beverages", "Desserts", "American", "Cafe"],
+      cuisines: ["Burgers", "Beverages", "Desserts", "American"],
       tags: [],
       costForTwo: 20000,
       costForTwoString: "₹200 FOR TWO",

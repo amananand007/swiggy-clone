@@ -11,23 +11,29 @@ const loggedInUser = () => {
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <div className="header">
+    <div className="flex justify-between bg-pink-50">
       <Title />
       <div className="nav-items">
-        <ul>
-          <li>
+        <ul className="flex py-10 px-2">
+          <li className="px-2">
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link className="px-2" to="/about">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link className="px-2" to="/contact">
+              Contact
+            </Link>
           </li>
 
           <li>Cart</li>
           <li>
-            <Link to="/instamart">Instamart</Link>
+            <Link className="px-2" to="/instamart">
+              Instamart
+            </Link>
           </li>
         </ul>
       </div>
