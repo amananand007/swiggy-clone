@@ -1,7 +1,8 @@
 // Composing Components
 import Title from "./Title";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import UserContext from "./utils/UserContext";
 
 const loggedInUser = () => {
   // API call to check authentication
@@ -10,6 +11,8 @@ const loggedInUser = () => {
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const { user } = useContext(UserContext);
   return (
     <div className="flex justify-between bg-pink-50">
       <Title />
@@ -37,6 +40,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      {user.name}
       {isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(false)}>Logout</button>
       ) : (
